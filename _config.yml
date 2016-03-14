@@ -16,7 +16,10 @@ timezone:          Asia/Shenzhen
 markdown:          kramdown
 highlighter:       pygments
 excerpt_separator: <!--more-->
-permalink:         /articles/:year-:month/:title
+permalink:         /:title
+paginate:          7
+paginate_path:     "page:num"
+gems:              [jekyll-paginate]
 
 kramdown:
   auto_ids:       true
