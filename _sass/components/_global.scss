@@ -15,6 +15,14 @@ img {
   height: auto;
   max-width: 100%;
 }
+::selection
+{
+  color: #42b983;
+}
+::-moz-selection
+{
+  color: #42b983;
+}
 
 // Tables
 table,
