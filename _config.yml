@@ -4,8 +4,8 @@
 ####################################
 #
 title:       "Scott's Blog"
-description: 'A backend developer who loves design awesome things. Working for RendezvousCheznous atm in Marseille, France.'
-url:         # the base hostname & protocol for your site
+description: "Chengfeilong's Blog. A front-end web developer who loves design awesome things. Working for yiyunkeji in Shenzhen, China."
+url: # the base hostname & protocol for your site
 
 #
 ###################################
@@ -36,17 +36,17 @@ owner:
   job: "front-end web developer"
   bio: "一个立志成为优雅前端工程师的小白."
   email: me@chengfeilong.com
-  disqus-shortname: renyuanzblog
+  disqus-shortname: Sco7777777 #renyuanzblog
   twitter: #username
   facebook: #username
   google:
     plus: #username
-    analytics: UA-62251910-1
+    analytics: #UA-62251910-1
     verify:
     ad-client:
     ad-slot:
   bing-verify:
-  github: #username
+  github: wangpengfei15975 #username
   stackoverflow: #123456/username   from a "http://stackoverflow.com/users/123456/username" link
   linkedin: #username
   xing: #username
