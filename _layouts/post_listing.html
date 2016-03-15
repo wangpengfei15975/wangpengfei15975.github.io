@@ -2,61 +2,89 @@
 layout: default
 ---
 
-{% for post in site.posts %}
+{% for post in paginator.posts %}
 <section class="post">
-  <header class="post-header">
-    <p class="post-meta">
+    <header class="post-header">
+        <p class="post-meta">
       <span class="post-date">
         {{ post.date | date: "%-d %b %Y" | upcase }}
       </span>
-      {% if post.categories.size > 0 %}
-      •
-      {% for cat in post.categories %}
-        <a class="post-cat" href="{{ site.url }}/categories/#{{ cat }}">{{ cat }}</a>
-        {% unless forloop.last %}
-        <span>/</span>
-        {% endunless %}
-      {% endfor %}
-      {% endif %}
-    </p>
-    <h4>
-      <a href="{{ site.url }}{{ post.url }}" class="post-title" title="{{ post.title }}">{{ post.title }}</a>
-      {% if post.link %}
-      <a class="post-title-link" href="{{ post.link }}" target="_blank" title="{{ post.title }}"><i class="fa fa-external-link"></i></a>
-      {% endif %}
-    </h4>
+            {% if post.categories.size > 0 %}
+            •
+            {% for cat in post.categories %}
+            <a class="post-cat" href="{{ site.url }}/categories/#{{ cat }}">{{ cat }}</a>
+            {% unless forloop.last %}
+            <span>/</span>
+            {% endunless %}
+            {% endfor %}
+            {% endif %}
+        </p>
+        <h4>
+            <a href="{{ site.url }}{{ post.url }}" class="post-title" title="{{ post.title }}">{{ post.title }}</a>
+            {% if post.link %}
+            <a class="post-title-link" href="{{ post.link }}" target="_blank" title="{{ post.title }}"><i class="fa fa-external-link"></i></a>
+            {% endif %}
+        </h4>
 
-    {% if post.author %}
-      {% assign author = site.data.authors[post.author] %}
-    {% else %}
-      {% assign author = site.owner %}
-    {% endif %}
+        {% if post.author %}
+        {% assign author = site.data.authors[post.author] %}
+        {% else %}
+        {% assign author = site.owner %}
+        {% endif %}
 
     </header>
 
     {% if post.excerpt %}
     <div class="post-description">
-      <p>
-        {{ post.excerpt }}
-      </p>
+        <p>
+            {{ post.excerpt }}
+        </p>
     </div>
     {% endif %}
 
     {% if post.image.feature %}
     <div class="post-image-feature">
-      <img src=
-      {% if post.image.feature contains 'http' %}
-      "{{ post.image.feature }}"
-      {% else %}
-      "{{ site.url }}/img/{{ post.image.feature }}"
-      {% endif %}
-      alt="{{ post.title }} feature image">
+        <img src=
+                     {% if post.image.feature contains 'http' %}
+        "{{ post.image.feature }}"
+        {% else %}
+        "{{ site.url }}/img/{{ post.image.feature }}"
+        {% endif %}
+        alt="{{ post.title }} feature image">
 
-      {% if post.image.credit %}
-      <span class="image-credit">Photo Credit: <a href="{{ post.image.creditlink }}">{{ post.image.credit }}</a></span>
-      {% endif %}
+        {% if post.image.credit %}
+        <span class="image-credit">Photo Credit: <a href="{{ post.image.creditlink }}">{{ post.image.credit }}</a></span>
+        {% endif %}
     </div><!-- /.image-wrap -->
     {% endif %}
 
 </section>
 {% endfor %}
+
+
+
+{% if paginator.total_pages > 1 %}
+<div class="pagination">
+    {% if paginator.previous_page %}
+    <a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">&laquo; Prev</a>
+    {% else %}
+    <span>&laquo; Prev</span>
+    {% endif %}
+
+    <!--{% for page in (1..paginator.total_pages) %}-->
+    <!--{% if page == paginator.page %}-->
+    <!--<em>{{ page }}</em>-->
+    <!--{% elsif page == 1 %}-->
+    <!--<a href="{{ '/index.html' | prepend: site.baseurl | replace: '//', '/' }}">{{ page }}</a>-->
+    <!--{% else %}-->
+    <!--<a href="{{ site.paginate_path | prepend: site.baseurl | replace: '//', '/' | replace: ':num', page }}">{{ page }}</a>-->
+    <!--{% endif %}-->
+    <!--{% endfor %}-->
+
+    {% if paginator.next_page %}
+    <a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">Next &raquo;</a>
+    {% else %}
+    <span>Next &raquo;</span>
+    {% endif %}
+</div>
+{% endif %}
