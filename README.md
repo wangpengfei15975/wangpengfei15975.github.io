@@ -1,30 +1,27 @@
-# Leonids Jekyll Themes
+# Scott's Blog
 
-**[Leonids](http://renyuanz.github.io/leonids)** is a clean Jekyll theme perfect for powering your GitHub hosted blog.
+**[Scott's Blog](http://www.chengfeilong.com/)** 基于jekyll制作,发布在github pages上.该博客主张简洁清爽的风格，喜欢的朋友可以star或者fork.
 
-## What is Leonids?
+## 博客具体内容
 
-* Responsive templates. Looking good on mobile, tablet, and desktop.
-* Simple and clear permalink structure.
-* Support for Disqus Comments.
-* Support for multi-authors.
-* **And** the Leonids (/ˈliːənɪdz/ lee-ə-nidz) are a prolific meteor shower associated with the comet [Tempel-Tuttle](https://en.wikipedia.org/wiki/55P/Tempel%E2%80%93Tuttle).
+* 响应式设计,在pc\pad\phone上都有良好的表现.
+* 简洁的设计和简单的目录结构.
+* 可使用第三方留言组件如多说、disqus等等.
+* 可使用第三方分享功能,如百度分享.
+* **最后** 如果有需要帮助的朋友可以[email](mailto:me@chengfeilong.com)或者star该repo,在issues下提出你遇到的问题.
 
-See a [demo](http://renyuanz.github.io/leonids/) hosted on GitHub.
+See a [demo](http://www.chengfeilong.com/) hosted on GitHub.
 
-## Quick setup
+## 快速开始
 
-`git clone https://github.com/renyunz/leonids`
+* 首先你需要在你的设备上安装jekyll,如若使用代码高亮还需要安装rouge,具体安装请自己查阅相关.
 
-`cd leonids`
+* 然后你就可以fork该博客,将该项目克隆到你的本地环境.
+
+`git clone https://github.com/wangpengfei15975/wangpengfei15975.github.io.git`
+
+`cd wangpengfei15975.github.io`
 
 `jekyll server`
 
-Check out your awesome blog at `http://localhost:4000` and Cheers!
-
-## TODO
-
-- [ ] Build a timeline page.
-- [ ] Build a portfolio page.
-- [ ] Redesign categories page. Ref: [dribbble: blog category section By Ilja Miskov](https://dribbble.com/shots/2274792-Blog-Category-Selection)
-- [ ] Multi languages support.
+* 此时打开浏览器本地ip的4000端口,即可看到一个属于自己的简洁清爽的主题博客,接下来要做的就是打造一款属于自己的博客.
