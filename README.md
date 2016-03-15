@@ -10,7 +10,7 @@
 * 可使用第三方分享功能,如百度分享.
 * **最后** 如果有需要帮助的朋友可以[email](mailto:me@chengfeilong.com)或者star该repo,在issues下提出你遇到的问题.
 
-See a [demo](http://www.chengfeilong.com/) hosted on GitHub.
+  See a [demo](http://www.chengfeilong.com/) hosted on GitHub.
 
 ## 快速开始
 
