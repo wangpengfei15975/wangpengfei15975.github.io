@@ -13,3 +13,15 @@ I was thinking about to design my own Jekyll theme for a long time and I did fin
 Look back into the last three months, it was a wonderful experience to work on what I really love. I did complete two projects, the first one is a presentation website for a Chinese air condition manufacturer -- [VeckChina](http://www.veckchina.com), and the second one is a ruby on rails e-commerce project for a Parisian restaurant -- [Msushi](https://msushi.herokuapp.com). I made a lot of progresses of coding skills and negotiation abilities. And I did learn what and how to do when there is a conflict between developer and designer or between customer and company.
 
 Now it's time to moving on, I am on the train to Marseille while writing this post. Hope everything will be ok.
+
+{% highlight ruby %}
+def foo
+    puts 'foo'
+ end
+{% endhighlight %}
+
+```ruby
+def foo
+    puts 'foo'
+ end
+```
