@@ -18,10 +18,10 @@ See a [demo](http://www.chengfeilong.com/) hosted on GitHub.
 
 * 然后你就可以fork该博客,将该项目克隆到你的本地环境.
 
-`git clone https://github.com/wangpengfei15975/wangpengfei15975.github.io.git`
+   `git clone https://github.com/wangpengfei15975/wangpengfei15975.github.io.git`
 
-`cd wangpengfei15975.github.io`
+   `cd wangpengfei15975.github.io`
 
-`jekyll server`
+   `jekyll server`
 
 * 此时打开浏览器本地ip的4000端口,即可看到一个属于自己的简洁清爽的主题博客,接下来要做的就是打造一款属于自己的博客.
