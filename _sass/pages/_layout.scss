@@ -20,7 +20,6 @@
 .cover-card {
   color: $text-color;
   padding: 0 30px;
-  overflow:hidden;
   .avatar {
     border-radius: 7px;
     width: 156px;
@@ -52,11 +51,10 @@
   }
 }
 .social-links {
-  overflow: hidden;
-  margin-top: -.5em;
-  @include media-query($small-screen) {
-    margin-top: .5em;
-  }
+  //margin-top: -.5em;
+  //@include media-query($small-screen) {
+  margin-top: .5em;
+  //}
   ul {
     margin: 0;
     padding: 0;
