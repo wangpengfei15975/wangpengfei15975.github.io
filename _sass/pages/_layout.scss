@@ -51,7 +51,10 @@
   }
 }
 .social-links {
-  // margin-top: 0.5em;
+  margin-top: -.5em;
+  @include media-query($small-screen) {
+    margin-top: .5em;
+  }
   ul {
     margin: 0;
     padding: 0;
