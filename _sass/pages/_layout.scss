@@ -51,6 +51,7 @@
   }
 }
 .social-links {
+  overflow: hidden;
   margin-top: -.5em;
   @include media-query($small-screen) {
     margin-top: .5em;
