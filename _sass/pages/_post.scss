@@ -36,9 +36,17 @@ section.post {
 // Back home button
 
 .back-home a {
-  color: $info;
-  text-decoration: underline;
+  padding:10px 15px;
+  border:1px solid $secondary;
+  color: $secondary;
   font-family: $font-family-monospace;
+  -webkit-transition:all .4s;
+  transition:all .4s;
+  &:hover{
+    text-decoration: underline;
+    color:$white;
+    background-color:$secondary;
+  }
 }
 
 // Post title
@@ -61,7 +69,7 @@ section.post {
   font-size: 13px;
   font-weight: bold;
 	.post-date {
-		color: $secondary;
+		color: $primary;
 	}
 	.post-author {
 		text-transform: uppercase;

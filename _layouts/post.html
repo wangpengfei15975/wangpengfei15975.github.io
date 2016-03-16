@@ -3,7 +3,7 @@ layout: default
 ---
 
 <div class="back-home">
-  <a href="{{ site.url }}/">< back Home.</a>
+  <a href="{{ site.url }}/">back.</a>
 </div>
 {% if page.image.feature %}
 <div class="post-image-feature">
@@ -27,10 +27,10 @@ layout: default
     <h1 title="{{ page.title }}">{{ page.title }}</h1>
     <span class="post-meta">
       <span class="post-date">
-        {{ page.date | date: "%-d %b %Y" | upcase }}
+        {{ page.date | date: "%b %-d %Y" }}
       </span>
-      •
-      {% include read_time.html %}
+      <!-- - -->
+      <!--{% include read_time.html %}-->
     </span>
 
   </header>
@@ -40,7 +40,7 @@ layout: default
   </article>
 </div>
 
-<div class="bdsharebuttonbox"><a href="#" class="bds_more" data-cmd="more"></a><a href="#" class="bds_fbook" data-cmd="fbook" title="分享到Facebook"></a><a href="#" class="bds_twi" data-cmd="twi" title="分享到Twitter"></a><a href="#" class="bds_weixin" data-cmd="weixin" title="分享到微信"></a><a href="#" class="bds_tsina" data-cmd="tsina" title="分享到新浪微博"></a><a href="#" class="bds_qzone" data-cmd="qzone" title="分享到QQ空间"></a></div>
+<div class="bdsharebuttonbox"><a href="#" class="bds_more" data-cmd="more"></a><a href="#" class="bds_fbook" data-cmd="fbook" title="分享到Facebook"></a><a href="#" class="bds_twi" data-cmd="twi" title="分享到Twitter"></a><a href="#" class="bds_weixin" data-cmd="weixin" title="分享到微信"></a><a href="#" class="bds_qzone" data-cmd="qzone" title="分享到QQ空间"></a><a href="#" class="bds_tsina" data-cmd="tsina" title="分享到新浪微博"></a></div>
 <!--<div class="share-buttons">-->
   <!--<h6>Share on: </h6>-->
   <!--<ul>-->
@@ -62,9 +62,28 @@ layout: default
   <!--</ul>-->
 <!--</div>&lt;!&ndash; end share-buttons &ndash;&gt;-->
 
-{% if site.owner.disqus-shortname and page.comments == true %}
-<div id="disqus_thread"></div>
-{% include disqus.html %}
+<!--{% if site.owner.disqus-shortname and page.comments == true %}-->
+<!--<div id="disqus_thread"></div>-->
+<!--{% include disqus.html %}-->
+<!--{% endif %}-->
+
+{% if site.owner.duoshuo-shortname and page.comments == true %}
+<!-- 多说评论框 start -->
+<div class="ds-thread" data-thread-key="{{ page.url }}" data-title="{{ page.title }}" data-url="{{ site.url }}{{ page.url }}"></div>
+<!-- 多说评论框 end -->
+<!-- 多说公共JS代码 start (一个网页只需插入一次) -->
+<script type="text/javascript">
+  var duoshuoQuery = {short_name:"chengfeilong"};
+  (function() {
+    var ds = document.createElement('script');
+    ds.type = 'text/javascript';ds.async = true;
+    ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+    ds.charset = 'UTF-8';
+    (document.getElementsByTagName('head')[0]
+    || document.getElementsByTagName('body')[0]).appendChild(ds);
+  })();
+</script>
+<!-- 多说公共JS代码 end -->
 {% endif %}
 
-<script>window._bd_share_config={"common":{"bdSnsKey":{},"bdText":"","bdMini":"2","bdMiniList":false,"bdPic":"","bdStyle":"1","bdSize":"32"},"share":{},"image":{"viewList":["fbook","twi","weixin","tsina","qzone"],"viewText":"分享到：","viewSize":"16"},"selectShare":{"bdContainerClass":null,"bdSelectMiniList":["fbook","twi","weixin","tsina","qzone"]}};with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];</script>
+<script>window._bd_share_config={"common":{"bdSnsKey":{},"bdText":"","bdMini":"2","bdMiniList":false,"bdPic":"","bdStyle":"1","bdSize":"32"},"share":{}};with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];</script>
