@@ -6,7 +6,7 @@ categories: Life
 comments: true
 ---
 
-# 前言
+## 前言
 关于玩博客的历程就先不废话了，完全符合阮一峰的说法：
 
 > 第一阶段，刚接触Blog，觉得很新鲜，试着选择一个免费空间来写。   
@@ -17,14 +17,25 @@ comments: true
 
 ***
 
-之后可能是在知乎或是 Ruby China 上看到了 Michael hartl 的 Tutorial ，买了第三版，跟着教程一步一步敲代码。
-也是这本教程让我入门了很多 Web 以及应用开发的知识，让我受益良多。不过之后看到很多人对此书的评价，
-我也确实要良心的说一句，一开始学习 Rails 就接触边写应用边写测试会有点复杂，但是会让你明白一个系统的开发流程，
-这对我之后的学习也有很大的帮助，可以说这本书帮我真正敲开了 Rails 的大门。
+## 正文
+该博客基于jekyll框架搭建于github上。
+博客介绍：
+- 响应式设计，pc\pad\phone上都有良好的表现
+- 简洁的页面布局，让访问者有更舒适的体验
+- 使用多说、disqus评论系统，在每篇博文下设置了评论功能
+- 使用百度分享，每篇博文下可以将你喜欢的博文进行分享转发
+- 使用网易云音乐外链，博客右下角可以打开播放器
+- 使用github外链，博客底部可以直接star该博客的repo
 
-大概学了将近大半年的时间后，我在巴黎找了一家设计公司实习，也敲出了第一个 Rails 的专案。我把 Staging 版本
-托管在 heroku 上，一来可以降低客户与我们的沟通成本，二来可以利用免费的 heroku 展示我的作品。如果有人感兴趣，
-可以点[这里](https://msushi.herokuapp.com/)。
+博客整体的思路就是简洁和响应式，所以在页面结构和布局上十分的简单，也并没有使用过多的效果，才更能注重博文的质量。
+整站使用的相关技术：
+- 博客框架：jekyll、markdown、liquid
+- 语言依赖：HTML、CSS、JAVASCRIPT
+- 库依赖：jQuery
+- CSS处理和后期维护：Sass
+- 版本控制：git
+
+主要的思路就是使用作为一个前端的基本技能并且依赖jekyll和markdown在github pages上搭建起整个博客的框架。我们要做的就是在前期处理页面结构和布局，
 
 简单介绍一下这个专案吧，我用到了 devise 做前台的用户系统，一个开源的 Rails e-commerce 框架 shoppe 做后台，
 以及 foundation 5 来做响应式布局。这不算是一个成功的专案，它里面还有很多没解决的问题：
@@ -46,4 +57,4 @@ comments: true
 如你所见，这个博客就是用的 leonids ，如果你觉得还不错，欢迎来我的[repo](https://github.com/renyuanz/leonids)
  fork 或 download 这个 theme ，如果能给我一个 star 就再好不过啦！
 
-如果有任何问题或建议，可以给我[发邮件](mailto:zourenyuan@gmail.com)或是直接在页面下留言。
+如果有任何问题或建议，可以给我[发邮件](mailto:me@chengfeilong.com)或是直接在页面下留言。
