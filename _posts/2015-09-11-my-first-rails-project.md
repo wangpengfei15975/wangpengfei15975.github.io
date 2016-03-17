@@ -9,8 +9,9 @@ comments: true
 第一次接触到 Ruby 是为什么我已经不记得了，不，确切的说是知道了 Rails 先于 Ruby
  （当时还不知道Ruby是一门语言）。之后，开始疯狂在 lynda 、 codecademy 和 codeschool 上看有关于 Ruby on Rails
  的视频和教程，去淘宝上买几十块钱一个月的 lynda 会员。但却迟迟不能入门。
+
 ***
- 
+
 之后可能是在知乎或是 Ruby China 上看到了 Michael hartl 的 Tutorial ，买了第三版，跟着教程一步一步敲代码。
 也是这本教程让我入门了很多 Web 以及应用开发的知识，让我受益良多。不过之后看到很多人对此书的评价，
 我也确实要良心的说一句，一开始学习 Rails 就接触边写应用边写测试会有点复杂，但是会让你明白一个系统的开发流程，
