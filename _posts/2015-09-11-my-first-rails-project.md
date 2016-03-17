@@ -50,26 +50,13 @@ comments: true
 
 ***
 
-主要的思路就是使用作为一个前端的基本技能并且依赖jekyll和markdown在github pages上搭建起整个博客的框架。我们要做的就是在前期处理页面结构和布局，
+博客的整体布局和样式其实是基于这张照片的灵感(2333)，博主本人作为一名小前端，对各种页面效果下至CSS3、Canvas，上至WebGL、Threejs都有所涉猎。但是无耐于在设计方面真的很差，尝试了不少的布局和特效，但是为什么自己设计的效果都看起来那么low，那么丑。最后还是在参考了诸多博客的设计之后才有了现在的整体样式。
 
-简单介绍一下这个专案吧，我用到了 devise 做前台的用户系统，一个开源的 Rails e-commerce 框架 shoppe 做后台，
-以及 foundation 5 来做响应式布局。这不算是一个成功的专案，它里面还有很多没解决的问题：
+可能看到这里有人已经按耐不住想要学习一番了，下面介绍一下如何制作一个这样的博客(免费，需要翻墙，绑定个性域名需要购买域名)：
 
-- 比如 Shoppe 这个 gem
-已经提供了一套 customer 系统，在我用 devise 在前台创建用户的时候，我还不能很好的将这两者联系起来。
-- 比如新注册的用户，必须要填写个人信息才能点单、付款，但是这个逻辑我做的很粗糙。
+首先在自己的PC上安装了git并学习git版本控制的相关内容，使用git Bash或者git GUI的方式皆可；其次要有HTML、CSS、JAVASCRIPT的基础，在对dom的操作上为了方便引入了jQuery库，在为了更好的操作CSS使用了Sass；其次要有一个属于自己的github账号，然后将所要展示的博客创建repo，并克隆到本地；接下来需要安装jekyll(需要翻墙)，这里就不偏离主题对它做详细介绍了，大家可以自行google教程，有卡主的地方可以直接在下方留言告知博主帮你解决；最后就是使用markdown和liquid编辑自己的博文上传生成博客了，欢迎大家fork我的[repo](https://github.com/wangpengfei15975/wangpengfei15975.github.io)作为对制作自己的博客的一个入门指引模板。
 
-不过我也是第一次深入了解了 gem 的运作原理，我把 'shoppe' fork 到自己的 Github 代码仓库中做了很多自定义的改动来
-迎合客户的需求：
+## 最后说几句
+所见即所得，这就是本人的博客，欢迎大家来[repo](https://github.com/wangpengfei15975/wangpengfei15975.github.io)star或者fork皆可，成为我的follower也是极好的。
 
-- 增加了法语版的翻译
-- 优化了使用 roo 实现的通过 Excel 批量上传信息的功能
-- 修改了一些数据库栏位，以使得资料和信息更符合法国公司的使用习惯
-
-用一个切实的专案来加强巩固自己的所学非常重要。所以，在结束实习之后，我开始折腾了自己的 Jekyll theme ，
-并取名 leonids ，意为“狮子座流星雨”，我就是狮子座的，所以有些自恋在所难免。
-
-如你所见，这个博客就是用的 leonids ，如果你觉得还不错，欢迎来我的[repo](https://github.com/renyuanz/leonids)
- fork 或 download 这个 theme ，如果能给我一个 star 就再好不过啦！
-
-如果有任何问题或建议，可以给我[发邮件](mailto:me@chengfeilong.com)或是直接在页面下留言。
+如果有任何问题或建议，可以给我[发邮件](mailto:me@chengfeilong.com)或是直接在页面下留言，博主每天都及时的回复并为你的博客之路做解答。
