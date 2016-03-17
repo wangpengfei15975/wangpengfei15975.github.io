@@ -16,7 +16,7 @@ comments: true
 > 第三阶段，觉得独立博客的管理太麻烦，最好在保留控制权的前提下，让别人来管，自己只负责写文章。
 
 ## 正文
-该博客基于jekyll框架搭建于github上。
+该博客基于**jekyll**框架搭建于github上。
 
 博客介绍：  
 
@@ -52,7 +52,7 @@ comments: true
 
 博客的不足之处：
 
-- 该博客非spa(single page application)，所以在播放音乐的时候页面跳转会中断播放
+- 该博客非**spa(single page application)**，所以在播放音乐的时候页面跳转会中断播放
 
 - 依赖于网易云音乐，可能会因为网络问题导致音乐无法播放的问题
 
@@ -73,4 +73,4 @@ comments: true
 ## 最后说几句
 所见即所得，这就是本人的博客，欢迎大家来star或者fork我的[repo](https://github.com/wangpengfei15975/wangpengfei15975.github.io)皆可，成为我的follower也是极好的。
 
-如果有任何问题或建议，可以给我[发邮件](mailto:me@chengfeilong.com)或是直接在页面下留言，博主每天都及时的回复。
+如果有任何问题或建议，可以给我[发邮件：me@chengfeilong.com](mailto:me@chengfeilong.com)或是直接在页面下留言，博主每天都及时的回复。
