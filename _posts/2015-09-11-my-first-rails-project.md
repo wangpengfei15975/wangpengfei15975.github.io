@@ -1,7 +1,7 @@
 ---
 layout: post
-title: My first Ruby on Rails project
-excerpt: "Everything looks great, but the landing page sucks."
+title: 关于本站
+excerpt: "这里主要是介绍一下本站存在的初衷，以及技术依赖"
 categories: Life
 comments: true
 ---
