@@ -57,6 +57,6 @@ comments: true
 首先在自己的PC上安装了git并学习git版本控制的相关内容，使用git Bash或者git GUI的方式皆可；其次要有HTML、CSS、JAVASCRIPT的基础，在对dom的操作上为了方便引入了jQuery库，在为了更好的操作CSS使用了Sass；其次要有一个属于自己的github账号，然后将所要展示的博客创建repo，并克隆到本地；接下来需要安装jekyll(需要翻墙)，这里就不偏离主题对它做详细介绍了，大家可以自行google教程，有卡主的地方可以直接在下方留言告知博主帮你解决；最后就是使用markdown和liquid编辑自己的博文上传生成博客了，欢迎大家fork我的[repo](https://github.com/wangpengfei15975/wangpengfei15975.github.io)作为对制作自己的博客的一个入门指引模板。
 
 ## 最后说几句
-所见即所得，这就是本人的博客，欢迎大家来[repo](https://github.com/wangpengfei15975/wangpengfei15975.github.io)star或者fork皆可，成为我的follower也是极好的。
+所见即所得，这就是本人的博客，欢迎大家来star或者fork我的[repo](https://github.com/wangpengfei15975/wangpengfei15975.github.io)皆可，成为我的follower也是极好的。
 
 如果有任何问题或建议，可以给我[发邮件](mailto:me@chengfeilong.com)或是直接在页面下留言，博主每天都及时的回复并为你的博客之路做解答。
