@@ -32,6 +32,10 @@ comments: true
 
 - 使用github外链，博客底部可以直接star该博客的repo  
 
+- 部分icon使用字体图标：font-awesome、icon-font  
+
+- 使用Image to asc2，将PhotoShop制作的个性签名绘制输出在控制台
+
 ***
 
 博客整体的思路就是简洁和响应式，所以在页面结构和布局上十分的简单，也并没有使用过多的效果，才更能注重博文的质量。
@@ -47,6 +51,10 @@ comments: true
 - CSS处理和后期维护：Sass  
 
 - 版本控制：git  
+
+- 字体图标：font-awesome、icon-font  
+
+- 制作图标和绘制控制台签名：PhotoShop
 
 ***
 

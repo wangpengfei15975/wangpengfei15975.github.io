@@ -2,3 +2,11 @@ _site
 .sass-cache
 _config.yml
 _drafts
+
+.idea/.name
+.idea/encodings.xml
+.idea/modules.xml
+.idea/workspace.xml
+.idea/misc.xml
+.idea/vcs.xml
+.idea/wangpengfei15975.github.io.iml
