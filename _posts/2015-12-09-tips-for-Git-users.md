@@ -1,46 +1,58 @@
 ---
 layout: post
-title: Tips for Git users
-excerpt: "Git is a powerful tool for Web development, here is some useful tips for Git beginners."
-categories: Git
+title: Git懒人教程-TortoiseGit
+excerpt: "Git是一款强有力的版本控制工具，在多人协作编码工作中尤为重要"
+categories: git
+tag: 教程
 comments: true
 ---
+## 初衷
+脱离命令行的方式，使用gui的界面化工具完成工作需要的版本控制操作，同时还对git运行机制有一定的了解，达到工作需要的基本，提高工作效率。
 
-If you know nothing about Git, google it, this is not the right place to start learning Git. I wrote this article for developers who know already the basic Git usage and use Git as an important piece of workflow.
-
-### Always use `git status`
-
-It's good to start off using git with good habits. Using `git status` to find where you are is one of them. The terminal's output shows the actions you can do with the current status.
-
-### I want see a list of details of my last N commits
-
-For example: to see your last 5 commits
-
-~~~ shell
-git log -n 5 --author=Salvador
-~~~
-
-If you want a simpler one line solution:
-
-~~~ shell
-git log --oneline -n 5 --author=Salvador
-~~~
-
-If you like the single line version, try creating an alias for git log like this (this is what I have for zsh)
-
-~~~ shell
-alias glog="git log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit"
-~~~
-
-Now, I can just use:
-
-~~~ shell
-glog -n 5
-~~~
-
-And I get a nice output.
-
-Which is colorized, shows the name of the author and also shows the graph and you can still pass in other flags (such as --author) which lets you filter it even more.
-
-[You can see the original answer here.](http://stackoverflow.com/questions/13542213/git-see-a-list-of-comments-of-my-last-n-commits#answer-13542327)
-
+## 准备工作
+1. 安装**git**  (至于为什么，我就不废话了。。。)  
+[点我下载git](https://git-scm.com/download/)
+2. 安装**TortoiseGit** (理由同上，下载时要注意选择自己机器对应的系统，如果英语能力差的有需要可以安装一个中文汉化包)  
+[点我下载TortoiseGit](https://tortoisegit.org/download/)
+3. 理解git基本概念:
+    - 什么是git?  
+    在多人协同工作的时候，总会出现多人编辑同一个文件的情况，一般遇到这种情况我们都要先备份一个之前的版本以免发生意外的情况，但是这样做起来我们工作会非常的没有效率，浪费了大量的时间。  
+    但git就是应此而生的，它是一个分布式版本管理系统，它可以在任何时间点，把文档的状态作为更新记录保存起来。  
+    因此可以把编辑过的文档复原到以前的状态，也可以显示编辑前后的内容差异。  
+    而且，编辑旧文件后，试图覆盖较新的文件的时候（即上传文件到服务器时），系统会发出警告，因此可以避免在无意中覆盖了他人的编辑内容。
+    - git数据库  
+    数据库 (Repository) 是记录文件或目录状态的地方，存储着内容修改的历史记录。在数据库的管理下，把文件和目录修改的历史记录放在对应的目录下。  
+    首先，Git的数据库分为远程数据库和本地数据库的两种。  
+    远程数据库: 配有专用的服务器，为了多人共享而建立的数据库。  
+    本地数据库: 为了方便用户个人使用，在自己的机器上配置的数据库。  
+    数据库分为远程和本地两种。平时用手头上的机器在本地数据库上操作就可以了。如果想要公开在本地数据库中修改的内容，把内容上传到远程数据库就可以了。另外，通过远程数据库还可以取得其他人修改的内容。  
+    创建本地数据库的方法有两种：一种是创建全新的数据库，另一种是复制远程数据库。  
+    - git工作树  
+    在Git管理下，大家实际操作的目录被称为工作树。  
+    在数据库和工作树之间有索引，索引是为了向数据库提交作准备的区域。  
+    Git在执行提交的时候，不是直接将工作树的状态保存到数据库，而是将设置在中间索引区域的状态保存到数据库。因此，要提交文件，首先需要把文件加入到索引区域中。  
+    所以，凭借中间的索引，可以避免工作树中不必要的文件提交，还可以将文件修改内容的一部分加入索引区域并提交。  
+    - git相关命令概念  
+    为了方便理解，我们倒叙来讲解概念：  
+    1. `pull`:由于我们分布式管理本地和远程两种分别都有一个项目的库，我们要更新代码需要从远程数据库拉取下来
+    2. `merge`:由于一段时间我们没有拉取代码，这段时间里可能会有别的同事上传了代码，所以我们需要和本地的代码进行合并更新，这个过程中可能会遇到冲突的情况，遇到后我们要正确的处理好冲突
+    3. `revert`:发生冲突的时候有可能出现不可解决的问题，此时我们需要通过回退的方式将代码回退到上一个版本来解决问题
+    4. `push`:有拉取代码更新的同时就有上传代码到远程数据库，上传成功后别人拉取的时候就能同步到他们的机器本地
+    5. `commit`:我们在代码中编写的代码并不是本地数据库，只是项目中的文件，我们需要通过commit将文件更新到本地数据库中
+    6. `add`:在**git工作树**我们提到我们修改的是一部分索引，我们需要先将这些索引添加到索引区域，此时就通过**add**的方式，之后的操作就是**commit**和**push**  
+    
+    通常在我们push之前尽量先把代码commit到本地数据中中然后进行一次pull操作，因为这一步最有可能出现`conflict`错误，即发生冲突，我们要保证自己的代码上传的时候不会影响到我们所有人的工作内容，所以这一步很有必要。  
+    
+## 正文
+1. 选择好要放置本地数据库的路径并进入为当前路径，之后在该窗口下点击右键,选择到设置信息项，在窗口中点击Git项，配置名称和Email，它将用于代表以后你的身份信息：
+![image](/img/git/1.png)![image](/img/git/2.png)
+2. 此时我们还在这个路径之下，接下来要做的就是拥有一个仓库，这个仓库可能是从一个已有的仓库复制即(clone)而来，也能是你创建的一个新的仓库，还是在该窗口点击右键我们以新建为例：
+![image](/img/git/3.png)![image](/img/git/4.png)![image](/img/git/5.png)
+3. 在TortoiseGit当中，它帮助我们合并了add和commit的操作，所以我们直接新建一个文件测试commit操作，此时我们选中提交的文件和提交到哪个分支并填写提交的信息以确保以后工作中的代码回溯需要：
+![image](/img/git/6.png)![image](/img/git/7.png)![image](/img/git/8.png)
+4. 这时要做的就是先把远程仓库的代码拉取下来，以确保自己的代码不会产生冲突。在TortoiseGit当中，它帮助我们合并了merge的操作，我们只进行pull操作即可：
+![image](/img/git/9.png)
+5. 在拉取的过程中我们并没有提供远程数据库，所以此界面中没有可供选择的origin，接下来我们要先设置好远程仓库再返回来接着进行pull操作，分别填入远程仓库的名称和地址，然后点击保存再点击确定，这样在pull和push的时候就会有一个可选项：
+![image](/img/git/10.png)![image](/img/git/11.png)
+6. 在拉取完后代码，如果有遇到冲突，就会报错提示，而且在代码中有所提示，让我们去更改，之后我们就可以进行push操作将代码上传到远程仓库了，在push的时候要选择好推送到哪个远程仓库，以及选择好对应的分支，这样别人就能拉取到我们的代码了：
+![image](/img/git/12.png)

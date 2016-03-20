@@ -2,7 +2,7 @@
 layout: post
 title: 关于本站
 excerpt: "这里主要是介绍一下本站存在的初衷，以及相关技术依赖"
-categories: Life
+categories: About&nbsp;this&nbsp;site
 comments: true
 ---
 

@@ -1,10 +1,10 @@
 ---
 layout: page
-title:  Tags
+title:  标签
 permalink: /tags/
 ---
 
-<h5>Tag cloud <i class="fa fa-cloud info-text-color"></i></h5>
+<h5>标签云 <i class="fa fa-cloud info-text-color"></i></h5>
 <ul class="tag-cloud">
 {% for tag in site.tags %}
   <li style="font-size: {{ tag | last | size | times: 100 | divided_by: site.tags.size | plus: 70  }}%">
