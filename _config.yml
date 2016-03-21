@@ -31,6 +31,13 @@ kramdown:
 
 #
 ###################################
+# loading
+####################################
+#
+loading:http://www.chengfeilong.com/img/loading.gif
+
+#
+###################################
 # Site Owner configuration
 ####################################
 #
