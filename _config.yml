@@ -34,7 +34,7 @@ kramdown:
 # loading
 ####################################
 #
-loading:http://www.chengfeilong.com/img/loading.gif
+loading: "http://www.chengfeilong.com/img/loading.gif"
 
 #
 ###################################
