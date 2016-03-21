@@ -28,6 +28,78 @@
   padding-right: 20px;
 }
 
+// pagination
+.pagination{
+  overflow:hidden;
+  span,a{
+    padding:7px 17px;
+    font-size:21px;
+  }
+  span{
+    border: 1px solid #fff;
+    &.left{
+      float:left;
+    }
+    &.right{
+      float:right;
+    }
+  }
+  a{
+    -webkit-transition: all .7s;
+    transition: all .7s;
+    border:1px solid #fff;
+    &:hover{
+      border:1px solid $primary;
+    }
+    &.left{
+      float:left;
+      &:hover{
+        animation: moveLeft .7s linear infinite alternate;
+        -webkit-animation: moveLeft .7s linear infinite alternate;
+      }
+    }
+    &.right{
+      float:right;
+      &:hover{
+        animation: moveRight .7s linear infinite alternate;
+        -webkit-animation: moveRight .7s linear infinite alternate;
+      }
+    }
+  }
+}
+@keyframes moveRight{
+  0%{
+    margin-right:0px;
+  }
+  100%{
+    margin-right:35px;
+  }
+}
+@-webkit-keyframes moveRight{
+  0%{
+    margin-right:0px;
+  }
+  100%{
+    margin-right:35px;
+  }
+}
+@keyframes moveLeft{
+  0%{
+    margin-left:0px;
+  }
+  100%{
+    margin-left:35px;
+  }
+}
+@-webkit-keyframes moveLeft{
+  0%{
+    margin-left:0px;
+  }
+  100%{
+    margin-left:35px;
+  }
+}
+
 // Post Section
 section.post {
 	margin-bottom: 80px;

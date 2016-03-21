@@ -118,6 +118,11 @@ footer {
     color: $danger;
     text-shadow: 0 0 5px $white, 0 0 10px $danger;
   }
+  .blogRoll{
+    a:hover{
+      text-decoration: underline;
+    }
+  }
 }
 .related-articles {
   margin-top: 2em;

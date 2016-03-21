@@ -66,9 +66,9 @@ layout: default
 {% if paginator.total_pages > 1 %}
 <div class="pagination">
     {% if paginator.previous_page %}
-    <a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">&laquo; Prev</a>
+    <a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}" class="left">&laquo; Prev</a>
     {% else %}
-    <span>&laquo; Prev</span>
+    <span class="left">&laquo; Prev</span>
     {% endif %}
 
     <!--{% for page in (1..paginator.total_pages) %}-->
@@ -82,9 +82,9 @@ layout: default
     <!--{% endfor %}-->
 
     {% if paginator.next_page %}
-    <a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">Next &raquo;</a>
+    <a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}" class="right">Next &raquo;</a>
     {% else %}
-    <span>Next &raquo;</span>
+    <span class="right">Next &raquo;</span>
     {% endif %}
 </div>
 {% endif %}
