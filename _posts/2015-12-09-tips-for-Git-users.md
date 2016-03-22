@@ -61,4 +61,4 @@ comments: true
 <img class="lazy" src="{{ site.loading }}" data-original="/img/git/10.png"/>
 <img class="lazy" src="{{ site.loading }}" data-original="/img/git/11.png"/>
 6. 在拉取完后代码，如果有遇到冲突，就会报错提示，而且在代码中有所提示，让我们去更改，之后我们就可以进行push操作将代码上传到远程仓库了，在push的时候要选择好推送到哪个远程仓库，以及选择好对应的分支，这样别人就能拉取到我们的代码了：
-<img class="lazy" src="{{ site.loading }}" data-original="/img/git/12.png"/>s
+<img class="lazy" src="{{ site.loading }}" data-original="/img/git/12.png"/>
