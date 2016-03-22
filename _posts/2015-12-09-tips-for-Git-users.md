@@ -45,7 +45,7 @@ comments: true
     
 ## 正文
 1. 选择好要放置本地数据库的路径并进入为当前路径，之后在该窗口下点击右键,选择到设置信息项，在窗口中点击Git项，配置名称和Email，它将用于代表以后你的身份信息：
-<img class="lazy" src="{{ site.loading }}" data-original="/img/git/1.png">
+<img class="lazy" src="{{ site.loading }}" data-original="/img/git/1.png"/>
 ![image](/img/git/1.png)![image](/img/git/2.png)
 2. 此时我们还在这个路径之下，接下来要做的就是拥有一个仓库，这个仓库可能是从一个已有的仓库复制即(clone)而来，也能是你创建的一个新的仓库，还是在该窗口点击右键我们以新建为例：
 ![image](/img/git/3.png)![image](/img/git/4.png)![image](/img/git/5.png)
