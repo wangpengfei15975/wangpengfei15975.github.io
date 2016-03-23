@@ -29,6 +29,7 @@
     });
 
     function unveil() {
+        debugger;
       var inview = images.filter(function() {
         var $e = $(this);
         if ($e.is(":hidden")) return;
