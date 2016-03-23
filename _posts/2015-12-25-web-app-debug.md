@@ -84,4 +84,4 @@ weinre --httpPort 8080 --boundHost -all-
 <img class="lazy" src="{{ site.loading }}" data-src="/img/webapp/20.png">  
 
 然后在准备要调试的页面中加入通信脚本：  
-`<script src="http://`+这里放本地ip:刚刚我们启动服务的端口(8080)+`/target/target-script.js"></script>`
+`<script src="http://`+这里放本地ip:刚刚我们启动服务的端口(8080)+`/target/target-script-min.js#anonymous"></script>`
