@@ -12,7 +12,7 @@
 
   $.fn.unveil = function(threshold, callback) {
 
-    var $w = $('.post-listing'),//修改触发对象 初始为$(window)
+    var $w = $(window),//修改触发对象 初始为$('.post-listing')
         th = threshold || 0,
         retina = window.devicePixelRatio > 1,
         attrib = retina? "data-src-retina" : "data-src",
@@ -37,7 +37,7 @@
             wb = wt + $w.height(),
             et = $e.offset().top,
             eb = et + $e.height();
-
+        
         return eb >= wt - th && et <= wb + th;
       });
 
