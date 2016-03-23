@@ -12,7 +12,7 @@
 
   $.fn.unveil = function(threshold, callback) {
 
-    var $w = $('#post'), //重写触发对象
+    var $w = $(window),
         th = threshold || 0,
         retina = window.devicePixelRatio > 1,
         attrib = retina? "data-src-retina" : "data-src",
@@ -29,7 +29,6 @@
     });
 
     function unveil() {
-        debugger;
       var inview = images.filter(function() {
         var $e = $(this);
         if ($e.is(":hidden")) return;
