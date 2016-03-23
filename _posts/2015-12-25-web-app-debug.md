@@ -84,4 +84,13 @@ weinre --httpPort 8080 --boundHost -all-
 <img class="lazy" src="{{ site.loading }}" data-src="/img/webapp/20.png">  
 
 然后在准备要调试的页面中加入通信脚本：  
-`<script src="http://`+这里放本地ip:刚刚我们启动服务的端口(8080)+`/target/target-script-min.js#anonymous"></script>`
+`<script src="http://`+这里放本地ip:刚刚我们启动服务的端口(8080)+`/target/target-script-min.js#anonymous"></script>`  
+然后我们点击页面中的此项进入调试界面：  
+<img class="lazy" src="{{ site.loading }}" data-src="/img/webapp/21.png">  
+
+在打开调试界面的情况下，我们用移动设备访问要调试的页面，调试界面中会呈现绿色选项，点击`elements`进入就是我们要的最终调试界面：  
+<img class="lazy" src="{{ site.loading }}" data-src="/img/webapp/22.png">  
+
+在调试界面中我们将鼠标移动到指定dom节点上，移动设备上就会自动将布局呈现出来，这时我们就可以去更清晰的分析那些移动设备奇怪的布局问题：  
+<img class="lazy" src="{{ site.loading }}" data-src="/img/webapp/23.png">
+<img class="lazy" src="{{ site.loading }}" data-src="/img/webapp/24.png">
