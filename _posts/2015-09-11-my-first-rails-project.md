@@ -34,7 +34,9 @@ comments: true
 
 - 部分icon使用字体图标：font-awesome、icon-font  
 
-- 使用Image to asc2，将PhotoShop制作的个性签名绘制输出在控制台
+- 使用Image to asc2，将PhotoShop制作的个性签名绘制输出在控制台  
+
+- 使用图片延迟加载，使用lazyload和unveil
 
 ***
 
@@ -54,7 +56,9 @@ comments: true
 
 - 字体图标：font-awesome、icon-font  
 
-- 制作图标和绘制控制台签名：PhotoShop
+- 制作图标和绘制控制台签名：PhotoShop  
+
+- 图片延迟加载：jquery.lazyload和jquery.unveil
 
 ***
 

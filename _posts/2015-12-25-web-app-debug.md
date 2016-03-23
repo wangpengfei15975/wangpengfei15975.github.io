@@ -17,38 +17,36 @@ comments: true
 尽管如此，它亦是大多数人用来开发的常用手段。  
 
 使用Chrome打开一个页面并按下F12，然后点击开发者界面左上角的移动设备按钮：  
-![image](/img/webapp/1.png)  
+<img class="lazy" src="{{ site.loading }}" data-src="/img/webapp/1.png">
 
 下图中红框的部分主要用来设置模拟移动设备的尺寸和横屏竖屏的效果，省略号那里主要用来查看设备的dpr(`device pixel ratio`),以及媒体查询范围和刻度尺，还有设置网络，可以说是功能比较齐全了。  
-![image](/img/webapp/2.png)
+<img class="lazy" src="{{ site.loading }}" data-src="/img/webapp/2.png">
 
 ## 中级-wamp
 `wamp`它集成了运行一个可以访问的项目所必备的所有条件，对一些有需要在移动设备上调试web且不具备后端能力的同学，它可以让移动设备访问你的纯前端页面，从而让你在移动设备上查看自己的页面真实效果。  
 
 首先我们需要下载并安装，然后在启动wamp之后，等待图标变为绿色，此时访问`http://localhost/`地址如果进入wamp的主页即说明一切顺利：  
-![image](/img/webapp/3.png)
-![image](/img/webapp/4.png)
+<img class="lazy" src="{{ site.loading }}" data-src="/img/webapp/3.png">
+<img class="lazy" src="{{ site.loading }}" data-src="/img/webapp/4.png">
 
 然后我们在任务栏中找到`wamp`的图标，左键点击它在弹出的列表中找到`Apache`的选项，然后继续找到它的子选项`Alias directories`，点击添加一个别名路径：  
-![image](/img/webapp/5.png)
+<img class="lazy" src="{{ site.loading }}" data-src="/img/webapp/5.png">
 
 在弹窗的窗口中：首先我们输入别名的名称，然后输入别名的路径，最后就设置好了一个别名，进入到`http://localhost/`下就能看到我们设置的别名了：  
-![image](/img/webapp/6.png)
-![image](/img/webapp/7.png)
-![image](/img/webapp/8.png)
+<img class="lazy" src="{{ site.loading }}" data-src="/img/webapp/6.png">
+<img class="lazy" src="{{ site.loading }}" data-src="/img/webapp/7.png">
+<img class="lazy" src="{{ site.loading }}" data-src="/img/webapp/8.png">
 
 此时我们进入别名就能看到此路径下的文件，我们将要调试的页面放在该路径之下，然后确定自己的ip，将地址中的`localhost`改为自己的ip：  
-![image](/img/webapp/9.png)
-![image](/img/webapp/10.png)
-![image](/img/webapp/11.png)
+<img class="lazy" src="{{ site.loading }}" data-src="/img/webapp/9.png">
+<img class="lazy" src="{{ site.loading }}" data-src="/img/webapp/10.png">
+<img class="lazy" src="{{ site.loading }}" data-src="/img/webapp/11.png">
 
 最后把我们要调试的设备和pc置于同一网络环境下，我使用的360wifi(2333)，此时在移动设备浏览器上输入该页面的路径就可以访问到页面了：  
-![image](/img/webapp/12.jpg)
+<img class="lazy" src="{{ site.loading }}" data-src="/img/webapp/12.jpg">
 
 如果觉得输入不方便的话，可以在chrome扩展程序中搜索`QR Code`并下载安装该插件，这样在想要访问的页面上可以直接点击它生成二维码然后直接用移动设备扫一扫快速访问：  
-![image](/img/webapp/13.png)
-
-
+<img class="lazy" src="{{ site.loading }}" data-src="/img/webapp/13.png">
 
 ## 高级-fiddler
 `fiddler`是一款功能十分强大的调试工具，它可以检查所有电脑与互联网之间的http通讯，我们将此功能用于把开启了`fiddler`的PC和移动设备进行代理的方式，从而可以对移动设备真实情况下的http请求一清二楚。
@@ -58,17 +56,17 @@ comments: true
 
 1. 首先移动设备要有网络  
 2. 其次查到自己pc的ip，并将自己的pc设置为移动设备的代理服务器，这里我使用的是360wifi的方式(`要注意的是，fiddler的默认端口是8888`)  
-![image](/img/webapp/10.png)
-![image](/img/webapp/14.jpg)
+<img class="lazy" src="{{ site.loading }}" data-src="/img/webapp/10.png">
+<img class="lazy" src="{{ site.loading }}" data-src="/img/webapp/14.jpg">
 
 3. 清除微信的缓存，然后在微信上随便访问一个链接，然后我们来到pc上运行的`fiddler`上就能看到这个链接中所运行的http请求，此时我们就可以选择指定类型的内容来进行查看：  
-![image](/img/webapp/15.jpg)
-![image](/img/webapp/16.jpg)
-![image](/img/webapp/17.png)
+<img class="lazy" src="{{ site.loading }}" data-src="/img/webapp/15.jpg">
+<img class="lazy" src="{{ site.loading }}" data-src="/img/webapp/16.jpg">
+<img class="lazy" src="{{ site.loading }}" data-src="/img/webapp/17.png">
 
 4. 过年期间很火的`微信红包照片`就被我这样一一逐个免费看了一遍(学以致用，2333)：  
-![image](/img/webapp/18.jpg)
-![image](/img/webapp/19.jpg)
+<img class="lazy" src="{{ site.loading }}" data-src="/img/webapp/18.jpg">
+<img class="lazy" src="{{ site.loading }}" data-src="/img/webapp/19.jpg">
 
 ## 终极-weinre
 `weinre`是一款移动web调试工具，它的最大的优点是可以在移动设备上查看任意dom的结构和布局样式等等，*唯一美中不足的地方是需要在调试的页面中加入一段通信用的脚本*。  
