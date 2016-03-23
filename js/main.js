@@ -17,5 +17,5 @@ $(function(){
         }
     });
     //$("img.lazy").lazyload({effect: "fadeIn"});
-    $("img.lazy").unveil(300);
+    $("img.lazy").unveil();
 });
