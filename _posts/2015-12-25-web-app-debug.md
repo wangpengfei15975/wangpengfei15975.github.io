@@ -73,11 +73,11 @@ comments: true
 
 首先我们需要安装`weinre`，由于我们需要使用`npm`的方式安装，所以我们前置条件还需要安装`node`：
 我们通过如下方式安装`weinre`：  
-``` bash
+```  
 npm install -g weinre
 ```  
 然后在命令行中启动`weinre`服务端：  
-``` bash
+```  
 weinre --httpPort 8080 --boundHost -all-
 ```  
 接下来在Chrome下打开本地`localhost:8080`即可看到`weinre`的页面：  
