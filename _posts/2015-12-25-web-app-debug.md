@@ -76,4 +76,12 @@ comments: true
 ``` bash
 npm install -g weinre
 ```  
-然后
+然后在命令行中启动`weinre`服务端：  
+``` bash
+weinre --httpPort 8080 --boundHost -all-
+```  
+接下来在Chrome下打开本地`localhost:8080`即可看到`weinre`的页面：  
+<img class="lazy" src="{{ site.loading }}" data-src="/img/webapp/20.png">  
+
+然后在准备要调试的页面中加入通信脚本：  
+`<script src="http://`+这里放本地ip:刚刚我们启动服务的端口(8080)+`/target/target-script.js"></script>`
