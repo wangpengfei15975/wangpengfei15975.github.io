@@ -16,5 +16,8 @@ $(function(){
             $('#musicContent').append('<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=330 height=450 src="http://music.163.com/outchain/player?type=0&id=317921676&auto=0&height=430"></iframe>');
         }
     });
-    //$("img.lazy").unveil(1000);
+    $("img.lazy").unveil(1000);
+    $('.post-listing').scroll(function(){
+        $(window).trigger('scroll');
+    });
 });

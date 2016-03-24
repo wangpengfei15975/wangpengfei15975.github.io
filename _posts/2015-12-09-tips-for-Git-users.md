@@ -45,19 +45,25 @@ comments: true
     
 ## 正文
 1. 选择好要放置本地数据库的路径并进入为当前路径，之后在该窗口下点击右键,选择到设置信息项，在窗口中点击Git项，配置名称和Email，它将用于代表以后你的身份信息：  
-![git](/img/git/1.png)![git](/img/git/2.png)
+<img src="{{ site.loading }}" data-src="/img/git/1.png" class="lazy">
+<img src="{{ site.loading }}" data-src="/img/git/2.png" class="lazy">
 
 2. 此时我们还在这个路径之下，接下来要做的就是拥有一个仓库，这个仓库可能是从一个已有的仓库复制即(clone)而来，也能是你创建的一个新的仓库，还是在该窗口点击右键我们以新建为例：  
-![git](/img/git/3.png)![git](/img/git/4.png)![git](/img/git/5.png)
+<img src="{{ site.loading }}" data-src="/img/git/3.png" class="lazy">
+<img src="{{ site.loading }}" data-src="/img/git/4.png" class="lazy">
+<img src="{{ site.loading }}" data-src="/img/git/5.png" class="lazy">
 
 3. 在TortoiseGit当中，它帮助我们合并了add和commit的操作，所以我们直接新建一个文件测试commit操作，此时我们选中提交的文件和提交到哪个分支并填写提交的信息以确保以后工作中的代码回溯需要：  
-![git](/img/git/6.png)![git](/img/git/7.png)![git](/img/git/8.png)
+<img src="{{ site.loading }}" data-src="/img/git/6.png" class="lazy">
+<img src="{{ site.loading }}" data-src="/img/git/7.png" class="lazy">
+<img src="{{ site.loading }}" data-src="/img/git/8.png" class="lazy">
 
 4. 这时要做的就是先把远程仓库的代码拉取下来，以确保自己的代码不会产生冲突。在TortoiseGit当中，它帮助我们合并了merge的操作，我们只进行pull操作即可：  
-![git](/img/git/9.png)
+<img src="{{ site.loading }}" data-src="/img/git/9.png" class="lazy">
 
 5. 在拉取的过程中我们并没有提供远程数据库，所以此界面中没有可供选择的origin，接下来我们要先设置好远程仓库再返回来接着进行pull操作，分别填入远程仓库的名称和地址，然后点击保存再点击确定，这样在pull和push的时候就会有一个可选项：  
-![git](/img/git/10.png)![git](/img/git/11.png)
+<img src="{{ site.loading }}" data-src="/img/git/10.png" class="lazy">
+<img src="{{ site.loading }}" data-src="/img/git/11.png" class="lazy">
 
 6. 在拉取完后代码，如果有遇到冲突，就会报错提示，而且在代码中有所提示，让我们去更改，之后我们就可以进行push操作将代码上传到远程仓库了，在push的时候要选择好推送到哪个远程仓库，以及选择好对应的分支，这样别人就能拉取到我们的代码了：  
-![git](/img/git/12.png)
+<img src="{{ site.loading }}" data-src="/img/git/12.png" class="lazy">
