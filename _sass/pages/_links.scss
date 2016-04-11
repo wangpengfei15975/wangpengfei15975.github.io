@@ -1,0 +1,25 @@
+.link-list {
+  position:relative;
+  .link-group {
+    margin-bottom: 2em;
+    .link-group-title {
+      padding:13px 17px;
+      //border:1px solid $warning;
+      transition:all .37s;
+      -webkit-transition:all .37s;
+      background-color:rgba(255,255,255,.1);
+      color: $warning;
+      text-transform: capitalize;
+      &:hover{
+        background-color:$warning;
+        color:#fff;
+      }
+    }
+
+    .link-detail {
+      padding-left: 1em;
+      margin-bottom: .5em;
+      color: $text-color;
+    }
+  }
+}
