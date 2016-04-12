@@ -6,9 +6,18 @@ ul.tag-cloud {
 
   li {
     display: inline-block;
-    margin-right: .5em;
+    margin: 0 .5em .5em 0;
     a.post-tag {
-      border-radius: 0.2em;
+      //border-radius: 0.2em;
+      display:block;
+      color:#fff;
+      padding:7px 11px;
+      border-radius:7px;
+      -webkit-border-radius:7px;
+      background-color:$secondary;
+      &:hover{
+        background-color:#720EDC;
+      }
     }
   }
 }
