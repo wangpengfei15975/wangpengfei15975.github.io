@@ -52,7 +52,9 @@
   }
 
   .col {
-    float: left;
+    @include media-query($medium-screen){
+      float: left;
+    }
     @include box-sizing(border-box);
     display:block;
   	vertical-align:top;
