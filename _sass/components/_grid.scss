@@ -68,6 +68,7 @@
         width: $perc;
         margin-left: 0;
         overflow: hidden;
+        position:relative;
       }
       $i: $i + 1;
     }
