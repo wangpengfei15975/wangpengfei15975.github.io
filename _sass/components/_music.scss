@@ -12,7 +12,7 @@
   height:50px;
   position:fixed;
   bottom:5px;
-  right:21px;
+  right:5px;
   background-color:#F36170;
   -webkit-border-radius:25px;
   border-radius:25px;
@@ -30,10 +30,16 @@
       display:block;
     }
   }
+  @include media-query($medium-screen) {
+    right:21px;
+  }
 }
 #musicContent{
   display:none;
   position:fixed;
   bottom:-53px;
-  right:68px;
+  right:52px;
+  @include media-query($medium-screen) {
+    right:68px;
+  }
 }

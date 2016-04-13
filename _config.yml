@@ -35,7 +35,7 @@ kramdown:
 ####################################
 #
 sass:
-  style: :compressed
+  style: compressed
 
 #
 ###################################
@@ -82,4 +82,4 @@ owner:
   weibo: Sco7777777 #username
   flickr: #username
   codepen: #username
-  zhihu: Scottynn-15975 #username
+  zhihu: se7en-zone #username
