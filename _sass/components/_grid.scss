@@ -67,7 +67,7 @@
       &.s#{$i} {
         width: $perc;
         margin-left: 0;
-        overflow: hidden;
+        //overflow: hidden;
         position:relative;
       }
       $i: $i + 1;
