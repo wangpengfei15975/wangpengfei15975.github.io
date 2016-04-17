@@ -11,7 +11,7 @@ comments: true
 一款基于原生js的组件，灵感来于知乎登陆页背景，比[particles.js](https://github.com/VincentGarreau/particles.js)更加轻量。  
 
 ## demo
-[demo](http://www.chengfeilong.com/loiter)
+[demo](http://www.chengfeilong.com/loiter.js)
 
 ## 使用方式
 `html`
@@ -36,7 +36,7 @@ comments: true
 | mode          | impact/through |圆点到达边界后的效果，impact为到达后碰撞返回效果，through为到达后穿过效果，默认为impact|
 | circleColor   | /             |圆点颜色，默认为灰色              |
 
-考虑到线条的渐变效果，所以线条颜色和粗细不可设  
+考虑到线条的渐变效果，所以线条颜色和粗细不可设。  
 调用方式：  
 `js`
 
