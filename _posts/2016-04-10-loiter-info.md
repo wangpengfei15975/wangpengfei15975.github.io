@@ -25,6 +25,9 @@ comments: true
 </script>
 ```
 
+效果：  
+<img src="{{ site.loading }}" data-src="http://www.chengfeilong.com/loiter.js/images/default.gif" class="lazy">
+
 ## 配置对象
 
 | 参数名         | 可选值         | 描述                          |
@@ -55,3 +58,9 @@ comments: true
     });
 </script>
 ```
+
+配置：  
+<img src="{{ site.loading }}" data-src="http://www.chengfeilong.com/loiter.js/images/config.png" class="lazy">
+
+效果：  
+<img src="{{ site.loading }}" data-src="http://www.chengfeilong.com/loiter.js/images/skyblue.gif" class="lazy">
