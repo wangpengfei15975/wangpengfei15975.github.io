@@ -2,6 +2,7 @@
   position:relative;
   overflow:hidden;
   .link-group {
+    max-width:170px;
     margin-bottom: 2em;
     float:left;
     .link-group-title {
@@ -23,6 +24,9 @@
       padding-left: 1em;
       margin-bottom: .5em;
       color: $text-color;
+      overflow: hidden;
+      white-space: nowrap;
+      text-overflow: ellipsis;
     }
   }
 }
