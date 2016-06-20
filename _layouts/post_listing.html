@@ -18,6 +18,8 @@ layout: default
             {% endunless %}
             {% endfor %}
             {% endif %}
+            -
+            <span class="read-time">访问量:&nbsp;<span data-hk-page="{{ post.url | prepend: site.url }}"> - </span></span>
         </p>
         <h4>
             <a href="{{ site.url }}{{ post.url }}" class="post-title" title="{{ post.title }}">{{ post.title }}</a>
