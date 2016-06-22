@@ -50,7 +50,7 @@ layout: default
                      {% if post.image.feature contains 'http' %}
         "{{ post.image.feature }}"
         {% else %}
-        "{{ site.url }}/img/{{ post.image.feature }}"
+        "{{ site.url }}{{ post.image.feature }}"
         {% endif %}
         alt="{{ post.title }} feature image">
 
