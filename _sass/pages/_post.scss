@@ -229,10 +229,11 @@ a.read-more {
   }
 }
 .post-image-feature {
-  margin-bottom: 40px;
+  margin: 40px 0;
   .feature-image {
     width: 100%;
     max-height: 500px;
+    display: block;
   }
 }
 
