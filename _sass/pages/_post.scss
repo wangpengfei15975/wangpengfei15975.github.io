@@ -102,7 +102,10 @@
 
 // Post Section
 section.post {
-	margin-bottom: 80px;
+  margin-bottom: 80px;
+  img{
+    display:block;
+  }
 }
 
 // Back home button
@@ -229,7 +232,7 @@ a.read-more {
   }
 }
 .post-image-feature {
-  margin: 40px 0;
+  margin: 27px 0;
   .feature-image {
     width: 100%;
     max-height: 500px;
