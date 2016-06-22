@@ -6,9 +6,6 @@
   z-index: 233;
   width: 100%;
   padding: 20px 20px 0;
-  .post-image-feature{
-    margin:7px 0;
-  }
   //-webkit-transform: translate3d(0,0,1px);
   //transform: translate3d(0,0,1px);
   @include media-query($small-screen) {
@@ -107,6 +104,9 @@
 // Post Section
 section.post {
   margin-bottom: 80px;
+  .post-image-feature{
+    margin:7px 0;
+  }
   img{
     display:block;
   }
