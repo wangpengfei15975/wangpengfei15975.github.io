@@ -22,6 +22,7 @@ image: {feature: "/img/MutationObserver/mirror.jpg"}
 即为：  
 
 ```js
+
 MutationObserver(
   function callback
 );
@@ -50,6 +51,7 @@ MutationObserver(
 该对象又分别有三个实例方法：  
 
 ```js
+
 observe(target,options); //通过options配置对象中的选项，监控target该Dom对象的变化。
 disconnect(); //和observe()成对出现，停止对Dom的监控。
 takeRecords(); //清空观察者对象队列，并返回。
@@ -71,6 +73,7 @@ takeRecords(); //清空观察者对象队列，并返回。
 下面我们对它进行一个简单的使用： 
  
 ```js
+
 // 设置节点
 var target = document.querySelector('body');
 // 创建观察者对象
