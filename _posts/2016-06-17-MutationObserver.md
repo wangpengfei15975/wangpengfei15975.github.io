@@ -5,7 +5,7 @@ excerpt: "MutationObserver-一个基于DOM4的DOM树变化监控API."
 categories: Javascript
 tag: Javascript
 comments: true
-image: {feature: "http://www.chengfeilong.com/img/MutationObserver/mirror.jpg"}
+image.feature: "http://www.chengfeilong.com/img/MutationObserver/mirror.jpg"
 
 ---------
 
