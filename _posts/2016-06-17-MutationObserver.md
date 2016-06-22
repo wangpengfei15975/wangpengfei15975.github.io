@@ -6,7 +6,7 @@ categories: Javascript
 tag: Javascript
 comments: true
 image.feature: "http://www.chengfeilong.com/img/MutationObserver/mirror.jpg"
-----------------------------------------------------------------------------
+---
 
 ## 前言
 关于这个API的起因是有一个前端朋友有一个监测DOM绑定属性的需求向我询问有没有可行性比较高的方式去自动监测，而不是自己手动通过`trigger`的方式去完成，热心助人的我就找到了这个API。  
