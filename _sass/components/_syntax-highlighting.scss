@@ -19,6 +19,9 @@ code {
   //margin: 0 2px;
   border-radius: 2px;
   white-space: nowrap;
+  table{
+    border:none;
+  }
 }
 pre { // only apply for code blocks
   overflow: auto;
