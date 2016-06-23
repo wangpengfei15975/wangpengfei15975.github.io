@@ -21,12 +21,11 @@ image: {feature: "/img/MutationObserver/mirror.jpg"}
 首先要通过`MutationObserver()`构造函数创建观察者对象，该函数接收一个参数用于DOM节点发生变化时回调使用的函数。  
 即为：  
 
-```js
-
+{% highlight javascript linenos %}
 MutationObserver(
   function callback
 );
-```
+{% endhighlight %}
 
 该对象中的回调函数在DOM节点发生变化时调用，调用时该函数可以返回两个参数，第一个参数是一个包含了多个对象的数组，第二个参数是该观察者对象本身。  
 那么第一个参数中的多个对象又是什么呢？  
@@ -50,12 +49,11 @@ MutationObserver(
 <hr>
 该对象又分别有三个实例方法：  
 
-```js
-
+{% highlight javascript linenos %}
 observe(target,options); //通过options配置对象中的选项，监控target该Dom对象的变化。
 disconnect(); //和observe()成对出现，停止对Dom的监控。
 takeRecords(); //清空观察者对象队列，并返回。
-```
+{% endhighlight %}
 
 其中`observe()`方法需要传入两个参数，其中第一个是DOM节点，第二个是观察者的配置对象。  
 下面对配置对象介绍：  
@@ -72,8 +70,7 @@ takeRecords(); //清空观察者对象队列，并返回。
 
 下面我们对它进行一个简单的使用： 
  
-```js
-
+{% highlight javascript linenos %}
 // 设置节点
 var target = document.querySelector('body');
 // 创建观察者对象
@@ -86,7 +83,7 @@ var observer = new MutationObserver(function(mutations,x) {
 var config = { attributes: true, childList: true, characterData: true, subtree: true }
 // 传入节点和观察选项
 observer.observe(target, config);
-```
+{% endhighlight %}
 
 其中我选择了`body`节点，然后设置了`subtree`配置属性为`true`，即为观察整个`body`下的所有节点。  
 我主要想对DOM属性进行监测，所以在监测代码中通过弹窗输出了变化对象类型和变化属性名。  
