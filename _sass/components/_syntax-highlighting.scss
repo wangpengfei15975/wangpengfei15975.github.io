@@ -9,6 +9,9 @@ pre, code {
   font-size: 0.9em;
   background-color: #f8f8f8;
   font-size: ($font-size-base - 2);
+  &.lineno{
+    color:#8F908A;
+  }
 }
 code {
   color: #e96900;
@@ -27,6 +30,7 @@ pre { // only apply for code blocks
   word-wrap: break-word;
   border-radius: 0;
   font-weight: normal;
+  background-color:#272822;
 }
 pre code {
   background: transparent;
