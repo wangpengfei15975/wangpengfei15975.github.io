@@ -22,6 +22,9 @@ code {
   table{
     border:none;
   }
+  td{
+    padding:0;
+  }
 }
 pre { // only apply for code blocks
   overflow: auto;
