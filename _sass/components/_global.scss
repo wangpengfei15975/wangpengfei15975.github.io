@@ -50,6 +50,7 @@ td {
 table {
   width: 100%;
   display: table;
+  border: 1px solid #d0d0d0;
   &.bordered > thead > tr,
   &.bordered > tbody > tr {
     border-bottom: 1px solid $table-border-color;
