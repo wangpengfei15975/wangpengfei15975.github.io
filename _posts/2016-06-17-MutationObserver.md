@@ -71,7 +71,7 @@ takeRecords(); //清空观察者对象队列，并返回。
 下面我们对它进行一个简单的使用： 
  
 {% highlight js linenos %}
-// 设置节点
+//设置节点
 var target = document.querySelector('body');
 // 创建观察者对象
 var observer = new MutationObserver(function(mutations,x) {
