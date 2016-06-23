@@ -21,7 +21,7 @@ image: {feature: "/img/MutationObserver/mirror.jpg"}
 首先要通过`MutationObserver()`构造函数创建观察者对象，该函数接收一个参数用于DOM节点发生变化时回调使用的函数。  
 即为：  
 
-{% highlight javascript linenos %}
+{% highlight js linenos %}
 MutationObserver(
   function callback
 );
@@ -49,7 +49,7 @@ MutationObserver(
 <hr>
 该对象又分别有三个实例方法：  
 
-{% highlight javascript linenos %}
+{% highlight js linenos %}
 observe(target,options); //通过options配置对象中的选项，监控target该Dom对象的变化。
 disconnect(); //和observe()成对出现，停止对Dom的监控。
 takeRecords(); //清空观察者对象队列，并返回。
@@ -70,7 +70,7 @@ takeRecords(); //清空观察者对象队列，并返回。
 
 下面我们对它进行一个简单的使用： 
  
-{% highlight javascript linenos %}
+{% highlight js linenos %}
 // 设置节点
 var target = document.querySelector('body');
 // 创建观察者对象
