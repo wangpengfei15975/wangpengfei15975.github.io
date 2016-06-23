@@ -21,11 +21,11 @@ image: {feature: "/img/MutationObserver/mirror.jpg"}
 首先要通过`MutationObserver()`构造函数创建观察者对象，该函数接收一个参数用于DOM节点发生变化时回调使用的函数。  
 即为：  
 
-{% highlight js linenos %}
+```js
 MutationObserver(
   function callback
 );
-{% endhighlight %}
+```
 
 该对象中的回调函数在DOM节点发生变化时调用，调用时该函数可以返回两个参数，第一个参数是一个包含了多个对象的数组，第二个参数是该观察者对象本身。  
 那么第一个参数中的多个对象又是什么呢？  
@@ -49,11 +49,11 @@ MutationObserver(
 <hr>
 该对象又分别有三个实例方法：  
 
-{% highlight js linenos %}
+```js
 observe(target,options); //通过options配置对象中的选项，监控target该Dom对象的变化。
 disconnect(); //和observe()成对出现，停止对Dom的监控。
 takeRecords(); //清空观察者对象队列，并返回。
-{% endhighlight %}
+```
 
 其中`observe()`方法需要传入两个参数，其中第一个是DOM节点，第二个是观察者的配置对象。  
 下面对配置对象介绍：  
