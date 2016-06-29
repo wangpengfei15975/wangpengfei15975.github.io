@@ -54,20 +54,20 @@
       color:#fff;
       background-color:$primary;
     }
-    //&.left{
-    //  float:left;
+    &.left{
+      float:left;
     //  &:hover{
     //    animation: moveLeft .7s linear infinite alternate;
     //    -webkit-animation: moveLeft .7s linear infinite alternate;
     //  }
-    //}
-    //&.right{
-    //  float:right;
+    }
+    &.right{
+      float:right;
     //  &:hover{
     //    animation: moveRight .7s linear infinite alternate;
     //    -webkit-animation: moveRight .7s linear infinite alternate;
     //  }
-    //}
+    }
   }
 }
 //@keyframes moveRight{
