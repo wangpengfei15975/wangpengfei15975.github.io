@@ -48,58 +48,60 @@
   a{
     -webkit-transition: all .7s;
     transition: all .7s;
-    border:1px solid #fff;
+    border:1px solid $primary;
+    background-color:#fff;
     &:hover{
-      border:1px solid $primary;
+      color:#fff;
+      background-color:$primary;
     }
-    &.left{
-      float:left;
-      &:hover{
-        animation: moveLeft .7s linear infinite alternate;
-        -webkit-animation: moveLeft .7s linear infinite alternate;
-      }
-    }
-    &.right{
-      float:right;
-      &:hover{
-        animation: moveRight .7s linear infinite alternate;
-        -webkit-animation: moveRight .7s linear infinite alternate;
-      }
-    }
+    //&.left{
+    //  float:left;
+    //  &:hover{
+    //    animation: moveLeft .7s linear infinite alternate;
+    //    -webkit-animation: moveLeft .7s linear infinite alternate;
+    //  }
+    //}
+    //&.right{
+    //  float:right;
+    //  &:hover{
+    //    animation: moveRight .7s linear infinite alternate;
+    //    -webkit-animation: moveRight .7s linear infinite alternate;
+    //  }
+    //}
   }
 }
-@keyframes moveRight{
-  0%{
-    margin-right:0px;
-  }
-  100%{
-    margin-right:35px;
-  }
-}
-@-webkit-keyframes moveRight{
-  0%{
-    margin-right:0px;
-  }
-  100%{
-    margin-right:35px;
-  }
-}
-@keyframes moveLeft{
-  0%{
-    margin-left:0px;
-  }
-  100%{
-    margin-left:35px;
-  }
-}
-@-webkit-keyframes moveLeft{
-  0%{
-    margin-left:0px;
-  }
-  100%{
-    margin-left:35px;
-  }
-}
+//@keyframes moveRight{
+//  0%{
+//    margin-right:0px;
+//  }
+//  100%{
+//    margin-right:35px;
+//  }
+//}
+//@-webkit-keyframes moveRight{
+//  0%{
+//    margin-right:0px;
+//  }
+//  100%{
+//    margin-right:35px;
+//  }
+//}
+//@keyframes moveLeft{
+//  0%{
+//    margin-left:0px;
+//  }
+//  100%{
+//    margin-left:35px;
+//  }
+//}
+//@-webkit-keyframes moveLeft{
+//  0%{
+//    margin-left:0px;
+//  }
+//  100%{
+//    margin-left:35px;
+//  }
+//}
 
 // Post Section
 section.post {
