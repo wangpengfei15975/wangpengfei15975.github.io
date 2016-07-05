@@ -14,7 +14,7 @@
   }
   @include media-query($medium-screen) {
     height: 100vh;
-    position: initial;
+    position: relative;
     width: 100%;
   }
 }
@@ -30,7 +30,7 @@
   }
   .author_name {
     display: block;
-    color: #F36170;
+    color: #fff;
     font-size: 1.75em;
     //text-transform: lowercase;
   }
