@@ -1,6 +1,8 @@
 /* LAYOUT CSS */
 .cover {
-  background-color: #dbcbb8;
+  //background-color: #dbcbb8;
+  background:url(../../img/sidebar_bg.jpg) no-repeat center;
+  background-size:cover;
   position: fixed;
   text-align: center;
   width: 100%;
