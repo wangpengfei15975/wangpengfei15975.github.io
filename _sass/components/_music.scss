@@ -35,13 +35,23 @@
   }
 }
 #skPlayer{
-  box-sizing:content-box;
-  -webkit-box-sizing:content-box;
   display:none;
   position:fixed;
   bottom:-53px;
   right:52px;
   @include media-query($medium-screen) {
     right:68px;
+  }
+  .skPlayer-picture{
+    box-sizing:content-box;
+    -webkit-box-sizing:content-box;
+  }
+  .skPlayer-control{
+    box-sizing:content-box;
+    -webkit-box-sizing:content-box;
+  }
+  .skPlayer-volume .skPlayer-icon:after{
+    box-sizing:content-box;
+    -webkit-box-sizing:content-box;
   }
 }
