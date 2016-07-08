@@ -240,25 +240,27 @@ $(function(){
                 'color:#ff3355');
 
     // 播放器
-    skPlayer({
-        src:'http://o9vplcp9o.bkt.clouddn.com/Solitude.mp3',//音乐文件，必填
-        name:'Solitude',//歌曲名称，必填
-        author:'Re:plus',//歌手，必填
-        cover:'http://o9vplcp9o.bkt.clouddn.com/Solitude_cover.jpg',//专辑封面，必填
-        loop:true//是否单曲循环，选填
-    });
-    //setTimeout(function(){
-    //    if($('#musicContainer').css('display') !== "none"){
-    //        if(!$('#musicContent').find('iframe').length){
-    //            $('#musicContent').append('<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=330 height=450 src="http://music.163.com/outchain/player?type=0&id=317921676&auto=0&height=430"></iframe>');
-    //        }
-    //    }
-    //},7000);
+
+    setTimeout(function(){
+        if($('#musicContainer').css('display') !== "none"){
+            skPlayer({
+                src:'http://o9vplcp9o.bkt.clouddn.com/Solitude.mp3',//音乐文件，必填
+                name:'Solitude',//歌曲名称，必填
+                author:'Re:plus',//歌手，必填
+                cover:'http://o9vplcp9o.bkt.clouddn.com/Solitude_cover.jpg',//专辑封面，必填
+                loop:true//是否单曲循环，选填
+            });
+        }
+    },7000);
     $('#musicSwitch').on('click',function(){
         $(this).hasClass('active')?$(this).removeClass('active'):$(this).addClass('active');
-    //    if(!$('#musicContent').find('iframe').length){
-    //        $('#musicContent').append('<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=330 height=450 src="http://music.163.com/outchain/player?type=0&id=317921676&auto=0&height=430"></iframe>');
-    //    }
+        skPlayer({
+            src:'http://o9vplcp9o.bkt.clouddn.com/Solitude.mp3',//音乐文件，必填
+            name:'Solitude',//歌曲名称，必填
+            author:'Re:plus',//歌手，必填
+            cover:'http://o9vplcp9o.bkt.clouddn.com/Solitude_cover.jpg',//专辑封面，必填
+            loop:true//是否单曲循环，选填
+        });
     });
 
 
