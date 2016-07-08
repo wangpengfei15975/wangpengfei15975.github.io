@@ -37,10 +37,10 @@
 #skPlayer{
   display:none;
   position:fixed;
-  bottom:-53px;
-  right:52px;
+  bottom:5px;
+  right:61px;
   @include media-query($medium-screen) {
-    right:68px;
+    right:77px;
   }
   .skPlayer-picture{
     box-sizing:content-box;
