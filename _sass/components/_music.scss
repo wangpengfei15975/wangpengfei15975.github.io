@@ -26,7 +26,7 @@
     background-color:#8d7edc;
     -webkit-transform:rotate3d(0, 1, 0, -180deg);
     transform:rotate3d(0, 1, 0, -180deg);
-    +#musicContent{
+    +#skPlayer{
       display:block;
     }
   }
@@ -34,7 +34,7 @@
     right:21px;
   }
 }
-#musicContent{
+#skPlayer{
   display:none;
   position:fixed;
   bottom:-53px;
