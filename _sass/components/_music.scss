@@ -27,7 +27,11 @@
     -webkit-transform:rotate3d(0, 1, 0, -180deg);
     transform:rotate3d(0, 1, 0, -180deg);
     +#skPlayer{
-      display:block;
+      //display:block;
+      right:61px;
+      @include media-query($medium-screen) {
+        right:77px;
+      }
     }
   }
   @include media-query($medium-screen) {
@@ -35,13 +39,11 @@
   }
 }
 #skPlayer{
-  display:none;
+  //display:none;
   position:fixed;
   bottom:5px;
-  right:61px;
-  @include media-query($medium-screen) {
-    right:77px;
-  }
+  right:-777px;
+  transition:.7s;
   .skPlayer-picture{
     box-sizing:content-box;
     -webkit-box-sizing:content-box;
