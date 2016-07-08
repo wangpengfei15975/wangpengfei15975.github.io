@@ -35,6 +35,8 @@
   }
 }
 #skPlayer{
+  box-sizing:content-box;
+  -webkit-box-sizing:content-box;
   display:none;
   position:fixed;
   bottom:-53px;
