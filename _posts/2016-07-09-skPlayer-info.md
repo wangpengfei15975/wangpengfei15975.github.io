@@ -7,7 +7,7 @@ tag: Plugin
 comments: true
 ---
 
-# skPlayer
+## 前言
 [![npm](https://img.shields.io/npm/v/skplayer.svg)]() [![npm](https://img.shields.io/npm/l/skplayer.svg?maxAge=2592000)]() [![npm](https://img.shields.io/npm/dt/skplayer.svg)]() [![npm](https://img.shields.io/badge/made%20by-Scott-orange.svg)]()  
 a simple HTML5 music player  
 一款基于HTML5的web音乐播放器  
@@ -17,34 +17,42 @@ old：
 new：  
 <img src="{{ site.loading }}" data-src="/img/skPlayer/new.png" class="lazy"><br>
 
-# Demo
+## Demo
 [在线预览](http://www.chengfeilong.com/skPlayer/)  
 预览：  
 ![demo](http://o9vplcp9o.bkt.clouddn.com/demo.gif)  
 单曲循环模式预览：  
 ![demo](http://o9vplcp9o.bkt.clouddn.com/demo_loop.gif)
 
-# 使用方法
+## 使用方法
 方式1：NPM  
 
-`npm install skplayer`  
-
+```bash
+npm install skplayer
+```
 
 方式2：引入文件  
 
 引入css文件： 
+
 ```html
 <link rel="stylesheet" href="./dist/skPlayer.min.css">
 ```
+
 写入播放器DOM：
+
 ```html
 <div id="skPlayer"></div>
 ```
+
 引入js文件：
+
 ```html
 <script src="./dist/skPlayer.min.js"></script>
 ```
+
 配置skPlayer对象：
+
 ```js
 skPlayer({
     src:'http://o9vplcp9o.bkt.clouddn.com/music.mp3',//音乐文件，必填
@@ -55,18 +63,18 @@ skPlayer({
 });
 ```
 
-# 技术依赖
+## 技术依赖
 原生Javascript、CSS3、HTML5 DOM API、HTML5 AUDIO API
 
-# TODO
+## TODO
 * 歌曲列表
 * 滚动歌词
 * 兼容移动端
 
-# Github
+## Github
 [Github](https://github.com/wangpengfei15975/skPlayer)  
 欢迎来star：[![GitHub stars](https://img.shields.io/github/stars/wangpengfei15975/skPlayer.svg?style=social&label=Star)](https://github.com/wangpengfei15975/skPlayer)
 
-# 最后
+## 最后
 UI参考：[dribbble](https://dribbble.com/shots/1233843-Ui-Kit-Rainy-Season)  
 感谢七牛云存储提供存储服务
