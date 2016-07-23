@@ -244,10 +244,10 @@ $(function(){
         if($('#musicContainer').css('display') !== "none"){
             if(!$('#skPlayer').find('audio').length){
                 skPlayer({
-                    src:'http://o9vplcp9o.bkt.clouddn.com/Solitude.mp3',//音乐文件，必填
-                    name:'Solitude',//歌曲名称，必填
-                    author:'Re:plus',//歌手，必填
-                    cover:'http://o9vplcp9o.bkt.clouddn.com/Solitude_cover.jpg',//专辑封面，必填
+                    src:'http://o9vplcp9o.bkt.clouddn.com/CountingStars.mp3',//音乐文件，必填
+                    name:'Counting Stars',//歌曲名称，必填
+                    author:'OneRepublic',//歌手，必填
+                    cover:'http://o9vplcp9o.bkt.clouddn.com/CountingStars_cover.jpg',//专辑封面，必填
                     loop:true//是否单曲循环，选填
                 });
             }
@@ -257,10 +257,10 @@ $(function(){
         $(this).hasClass('active')?$(this).removeClass('active'):$(this).addClass('active');
         if(!$('#skPlayer').find('audio').length){
             skPlayer({
-                src:'http://o9vplcp9o.bkt.clouddn.com/Solitude.mp3',//音乐文件，必填
-                name:'Solitude',//歌曲名称，必填
-                author:'Re:plus',//歌手，必填
-                cover:'http://o9vplcp9o.bkt.clouddn.com/Solitude_cover.jpg',//专辑封面，必填
+                src:'http://o9vplcp9o.bkt.clouddn.com/CountingStars.mp3',//音乐文件，必填
+                name:'Counting Stars',//歌曲名称，必填
+                author:'OneRepublic',//歌手，必填
+                cover:'http://o9vplcp9o.bkt.clouddn.com/CountingStars_cover.jpg',//专辑封面，必填
                 loop:true//是否单曲循环，选填
             });
         }
