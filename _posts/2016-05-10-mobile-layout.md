@@ -140,7 +140,10 @@ console.log(document.documentElement.clientWidth);
 <img src="{{ site.loading }}" data-src="/img/viewport/15.jpg" class="lazy"><br>
 <img src="{{ site.loading }}" data-src="/img/viewport/16.jpg" class="lazy"><br>
 当写了一部分布局之后我们可以惊奇地发现，页面竟然真的可以自适应，并且布局也没有什么问题。<br>
-[demo:易订货移动端官网](http://m.dinghuo123.com/)
+<!--[demo:易订货移动端官网](http://m.dinghuo123.com/)-->
+~~demo:易订货移动端官网~~(给之前公司使用的px布局方式的主页人家已经换成使用rem的方式了。。)
+我另外上一个自己最近写的px布局的页面吧，上边的截图由于时间关系就不换了。  
+[demo:决战沙城官方下载页](http://download.shengli.com/www/tljzsc/zht6.html)
 
 * 第二种方式与第一种完全不同，它将`viewport`设为设备宽度，然后根据设计稿宽度为基础设置好页面的`html根字体大小`，从而利用`rem`单位把控页面进行开发。<br>
 但是有一点要注意的是：<br>
@@ -194,16 +197,14 @@ width / 设计稿宽度 = rem / px
 然后我将`rem`设置为：<br>
 
 ```javascript
-
 var width = document.documentElement.clientWidth;
-document.documentElement.style.fontSize = width / 640(设计稿宽度) * 50(任意值) + 'px';
+document.documentElement.style.fontSize = width / 640(设计稿宽度) * 40(任意值) + 'px';
 ```
 
 ```css
-
 /* px to rem */
 @function rem($num){
-  @return ($num/50)*1rem;
+  @return ($num/40)*1rem;
 }
 body{
   font-family:"Microsoft Yahei";
@@ -213,7 +214,7 @@ body{
 
 这里是使用了sass的方式，定义了一个函数进行不规律数字的转换，从而也实现了px2rem。<br>
 可能有人会问，为什么要乘以一个值呢？，因为`width/设计稿宽度`总是一个小于1的值，我们要按一定的比例放大然后才能作为根的字体大小，只不过不同的公司或许有不同的放大倍数。<br>
-[demo:倚天屠龙记手游推广](http://download.shengli.com/www/yt/ytfst01.html)
+[demo:倚天屠龙记手游官网](http://yt.shengli.com/)
 
 
 * 第四种方式，淘宝突破天际的完美方式，还是基于这种布局方式，不过考虑到了`dpr`，然后放大缩小设计稿的方式进行适配使不同的`dpr`设备都有最优的体验<br>
