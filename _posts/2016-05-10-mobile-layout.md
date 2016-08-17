@@ -158,7 +158,6 @@ console.log(document.documentElement.clientWidth);
 然后利用之前`viewport`模块提到的方式获取设备宽度，在页面加载之初设置好页面的html根字体大小，我们以设计稿宽度为`750`为例：<br>
 
 ```javascript
-
 var width = document.documentElement.clientWidth;
 document.documentElement.style.fontSize = width/7.5(设计稿宽度缩小100倍，为了后期方便测量和使用) + 'px';
 ```
@@ -174,7 +173,6 @@ document.documentElement.style.fontSize = width/7.5(设计稿宽度缩小100倍�
 我们选取了其中一个元素的右侧边距为例，这里右边距为`.2rem`，这个值到底是怎么来的呢?跟着我的思路往下看：
 
 ```javascript
-
 var width = document.documentElement.clientWidth;实际页面宽度
 1rem = 55.2px = width/7.5 = width/(750/100);那么.2rem = 0.2rem = 20*width/750
 我们将设计稿上此处的距离设置为?px，就有一个很简单的初中等式
@@ -189,7 +187,6 @@ width / 750 = 20 * width / (750 * ?);
 即为遵循该等式：<br>
 
 ```javascript
-
 var width = document.documentElement.clientWidth;
 width / 设计稿宽度 = rem / px
 ```
