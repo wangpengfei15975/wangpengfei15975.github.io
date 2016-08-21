@@ -24,7 +24,9 @@ a simple HTML5 video player
 ## 使用方法
 方式1：NPM  
 
-`npm install ktPlayer`  
+```bash
+npm install ktPlayer
+```
 
 方式2：前往Github引入该项目下的dist文件夹  
 
@@ -33,18 +35,25 @@ a simple HTML5 video player
 接下来  
 
 引入css文件：
+
 ```html
 <link rel="stylesheet" href="./dist/ktPlayer.min.css">
 ```
+
 引入js文件：
+
 ```html
 <script src="./dist/ktPlayer.min.js"></script>
 ```
+
 写入播放器容器DOM：(可选,如未配置默认将播放器插入到body最后一个子节点.)
+
 ```html
 <div id="container"></div>
 ```
+
 创建KTPlayer对象,并初始化：
+
 ```js
 //原生环境
 window.onload = function(){
