@@ -1,4 +1,13 @@
-# ktPlayer
+---
+layout: post
+title: ktPlayer
+excerpt: "一款好看+简约的HTML5视频播放器."
+categories: Plugin
+tag: Plugin
+comments: true
+---
+
+## ktPlayer
 [![npm](https://img.shields.io/npm/v/ktPlayer.svg)]() [![npm](https://img.shields.io/npm/dt/ktPlayer.svg)]() [![npm](https://img.shields.io/npm/l/ktPlayer.svg)]() [![npm](https://img.shields.io/badge/made%20by-Scott-orange.svg)]()  
 a simple HTML5 video player  
 一款基于HTML5的web视频播放器  
