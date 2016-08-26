@@ -244,11 +244,27 @@ $(function(){
         if($('#musicContainer').css('display') !== "none"){
             if(!$('#skPlayer').find('audio').length){
                 skPlayer({
-                    src:'http://o9vplcp9o.bkt.clouddn.com/CountingStars.mp3',//音乐文件，必填
-                    name:'Counting Stars',//歌曲名称，必填
-                    author:'OneRepublic',//歌手，必填
-                    cover:'http://o9vplcp9o.bkt.clouddn.com/CountingStars_cover.jpg',//专辑封面，必填
-                    loop:true//是否单曲循环，选填
+                    music:[
+                        {
+                            src:'http://o9vplcp9o.bkt.clouddn.com/Solitude.mp3',
+                            name:'Solitude',
+                            author:'Re:plus',
+                            cover:'http://o9vplcp9o.bkt.clouddn.com/Solitude_cover.jpg'
+                        },
+                        {
+                            src:'http://o9vplcp9o.bkt.clouddn.com/CountingStars.mp3',
+                            name:'Counting Stars',
+                            author:'OneRepublic',
+                            cover:'http://o9vplcp9o.bkt.clouddn.com/CountingStars_cover.jpg'
+                        },
+                        {
+                            src:'http://o9vplcp9o.bkt.clouddn.com/music.mp3',
+                            name:'打呼',
+                            author:'潘玮柏&杨丞琳',
+                            cover:'http://o9vplcp9o.bkt.clouddn.com/cover.jpg'
+                        }
+                    ],
+                    theme:'red'
                 });
             }
         }
@@ -257,11 +273,27 @@ $(function(){
         $(this).hasClass('active')?$(this).removeClass('active'):$(this).addClass('active');
         if(!$('#skPlayer').find('audio').length){
             skPlayer({
-                src:'http://o9vplcp9o.bkt.clouddn.com/CountingStars.mp3',//音乐文件，必填
-                name:'Counting Stars',//歌曲名称，必填
-                author:'OneRepublic',//歌手，必填
-                cover:'http://o9vplcp9o.bkt.clouddn.com/CountingStars_cover.jpg',//专辑封面，必填
-                loop:true//是否单曲循环，选填
+                music:[
+                    {
+                        src:'http://o9vplcp9o.bkt.clouddn.com/Solitude.mp3',
+                        name:'Solitude',
+                        author:'Re:plus',
+                        cover:'http://o9vplcp9o.bkt.clouddn.com/Solitude_cover.jpg'
+                    },
+                    {
+                        src:'http://o9vplcp9o.bkt.clouddn.com/CountingStars.mp3',
+                        name:'Counting Stars',
+                        author:'OneRepublic',
+                        cover:'http://o9vplcp9o.bkt.clouddn.com/CountingStars_cover.jpg'
+                    },
+                    {
+                        src:'http://o9vplcp9o.bkt.clouddn.com/music.mp3',
+                        name:'打呼',
+                        author:'潘玮柏&杨丞琳',
+                        cover:'http://o9vplcp9o.bkt.clouddn.com/cover.jpg'
+                    }
+                ],
+                theme:'red'
             });
         }
     });
