@@ -58,25 +58,25 @@ npm install skplayer
 ```js
 //无列表单曲模式
 skPlayer({
-	music:{
-	    src:'http://o9vplcp9o.bkt.clouddn.com/music.mp3',//音乐文件，必填
-	    name:'打呼',//歌曲名称，必填
-	    author:'潘玮柏&杨丞琳',//歌手，必填
-	    cover:'http://o9vplcp9o.bkt.clouddn.com/cover.jpg'//专辑封面，必填
-	}
+    music:{
+        src:'http://o9vplcp9o.bkt.clouddn.com/music.mp3',//音乐文件，必填
+        name:'打呼',//歌曲名称，必填
+        author:'潘玮柏&杨丞琳',//歌手，必填
+        cover:'http://o9vplcp9o.bkt.clouddn.com/cover.jpg'//专辑封面，必填
+    },
     //loop:true 是否单曲循环，选填
     //theme:'red' 切换red主题，选填
 });
 //有列表多曲模式
 skPlayer({
-	music:[
-		{
-		    src:'http://o9vplcp9o.bkt.clouddn.com/music.mp3',//音乐文件，必填
-		    name:'打呼',//歌曲名称，必填
-		    author:'潘玮柏&杨丞琳',//歌手，必填
-		    cover:'http://o9vplcp9o.bkt.clouddn.com/cover.jpg'//专辑封面，必填
-		},
-		{
+    music:[
+        {
+            src:'http://o9vplcp9o.bkt.clouddn.com/music.mp3',//音乐文件，必填
+            name:'打呼',//歌曲名称，必填
+            author:'潘玮柏&杨丞琳',//歌手，必填
+            cover:'http://o9vplcp9o.bkt.clouddn.com/cover.jpg'//专辑封面，必填
+        },
+        {
             src:'http://o9vplcp9o.bkt.clouddn.com/CountingStars.mp3',
             name:'Counting Stars',
             author:'OneRepublic',
@@ -88,7 +88,7 @@ skPlayer({
             author:'潘玮柏&杨丞琳',
             cover:'http://o9vplcp9o.bkt.clouddn.com/cover.jpg'
         }
-	],
+    ],
     //loop:true 是否单曲循环，选填
     //theme:'red' 切换red主题，选填
 });
