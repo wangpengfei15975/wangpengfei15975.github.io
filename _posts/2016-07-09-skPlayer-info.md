@@ -1,6 +1,6 @@
 ---
 layout: post
-title: skPlayer
+title: skPlayer (已支持拉取网易云音乐歌单)
 excerpt: "一款超好看+极简的HTML5音乐播放器。"
 categories: Plugin
 tag: Plugin
@@ -91,6 +91,11 @@ skPlayer({
     ],
     //loop:true 是否单曲循环，选填
     //theme:'red' 切换red主题，选填
+});
+//获取网易云歌单模式
+skPlayer({
+    music:317921676 //歌单id(登陆网页版网易云音乐，进入歌单详情后，在url中可找到歌单id，例：'http://music.163.com/#/playlist?id=317921676'),
+    theme:'red'
 });
 ```
 
