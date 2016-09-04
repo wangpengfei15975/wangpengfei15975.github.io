@@ -1,7 +1,5 @@
 $(function(){
-
     /* ---- particles.js config ---- */
-
     particlesJS("particles-after-filter", {
         "particles": {
             "number": {
@@ -244,26 +242,7 @@ $(function(){
         if($('#musicContainer').css('display') !== "none"){
             if(!$('#skPlayer').find('audio').length){
                 skPlayer({
-                    music:[
-                        {
-                            src:'http://o9vplcp9o.bkt.clouddn.com/Solitude.mp3',
-                            name:'Solitude',
-                            author:'Re:plus',
-                            cover:'http://o9vplcp9o.bkt.clouddn.com/Solitude_cover.jpg'
-                        },
-                        {
-                            src:'http://o9vplcp9o.bkt.clouddn.com/CountingStars.mp3',
-                            name:'Counting Stars',
-                            author:'OneRepublic',
-                            cover:'http://o9vplcp9o.bkt.clouddn.com/CountingStars_cover.jpg'
-                        },
-                        {
-                            src:'http://o9vplcp9o.bkt.clouddn.com/music.mp3',
-                            name:'打呼',
-                            author:'潘玮柏&杨丞琳',
-                            cover:'http://o9vplcp9o.bkt.clouddn.com/cover.jpg'
-                        }
-                    ],
+                    music:317921676,
                     theme:'red'
                 });
             }
@@ -273,31 +252,11 @@ $(function(){
         $(this).hasClass('active')?$(this).removeClass('active'):$(this).addClass('active');
         if(!$('#skPlayer').find('audio').length){
             skPlayer({
-                music:[
-                    {
-                        src:'http://o9vplcp9o.bkt.clouddn.com/Solitude.mp3',
-                        name:'Solitude',
-                        author:'Re:plus',
-                        cover:'http://o9vplcp9o.bkt.clouddn.com/Solitude_cover.jpg'
-                    },
-                    {
-                        src:'http://o9vplcp9o.bkt.clouddn.com/CountingStars.mp3',
-                        name:'Counting Stars',
-                        author:'OneRepublic',
-                        cover:'http://o9vplcp9o.bkt.clouddn.com/CountingStars_cover.jpg'
-                    },
-                    {
-                        src:'http://o9vplcp9o.bkt.clouddn.com/music.mp3',
-                        name:'打呼',
-                        author:'潘玮柏&杨丞琳',
-                        cover:'http://o9vplcp9o.bkt.clouddn.com/cover.jpg'
-                    }
-                ],
+                music:317921676,
                 theme:'red'
             });
         }
     });
-
 
     // 图片延迟加载
     $("img.lazy").unveil(1000);
