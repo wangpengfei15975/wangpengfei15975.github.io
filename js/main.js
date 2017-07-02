@@ -242,12 +242,12 @@ $(function(){
         $(this).hasClass('active')?$(this).removeClass('active'):$(this).addClass('active');
         if(!$('#skPlayer').find('audio').length){
             var player = new skPlayer({
+                autoplay: true,
                 music: {
                     type: 'cloud',
                     source: 317921676
                 }
             });
-            player.play();
         }
     });
 
