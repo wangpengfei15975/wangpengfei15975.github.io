@@ -238,18 +238,6 @@ $(function(){
                 'color:#ff3355');
 
     // 播放器
-    setTimeout(function(){
-        if($('#musicContainer').css('display') !== "none"){
-            if(!$('#skPlayer').find('audio').length){
-                var player = new skPlayer({
-                    music: {
-                        type: 'cloud',
-                        source: 317921676
-                    }
-                });
-            }
-        }
-    },7000);
     $('#musicSwitch').on('click',function(){
         $(this).hasClass('active')?$(this).removeClass('active'):$(this).addClass('active');
         if(!$('#skPlayer').find('audio').length){
@@ -259,6 +247,7 @@ $(function(){
                     source: 317921676
                 }
             });
+            player.play();
         }
     });
 
