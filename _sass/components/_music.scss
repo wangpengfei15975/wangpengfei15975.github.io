@@ -40,7 +40,7 @@
 }
 #skPlayer{
   //display:none;
-  position:fixed;
+  position:fixed!important;
   bottom:116px;
   right:-777px;
   transition:.3s;
